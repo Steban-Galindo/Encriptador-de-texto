@@ -1,0 +1,20 @@
+body {
+  background-color: #393746;
+}
+.nav {
+  margin: 2%;
+}
+.title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Lora", serif;
+  font-size: xx-large;
+}
+.name {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-start;
+}
