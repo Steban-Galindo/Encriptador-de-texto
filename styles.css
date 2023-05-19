@@ -1,19 +1,22 @@
 body {
-  background-color: #393746;
+  background-color: rgb(5, 6, 45);
   padding: 15px;
 }
 .nav {
   margin: 2%;
 }
 .title {
-  color: white;
+  background: linear-gradient(#5b42f3, #00ddeb);
+  -webkit-background-clip: text;
+  color: transparent;
   display: flex;
   justify-content: center;
   font-family: "Lora", serif;
-  font-size: xx-large;
 }
 .name {
-  color: white;
+  background: linear-gradient(#af40ff, #5b42f3);
+  -webkit-background-clip: text;
+  color: transparent;
   font-family: "Dancing Script", cursive;
   font-size: xx-large;
   display: flex;
@@ -201,15 +204,15 @@ body {
   height: 6px;
   width: 6px;
   border-radius: 100%;
-  background-color: red;
+  background-color: #f15b59;
   position: absolute;
   top: calc(50% - 3px);
   right: 20px;
-  box-shadow: 1px 1px 3px #9c0000, -1px -1px 3px #ff0000;
+  box-shadow: 1px 1px 3px #f15b59, -1px -1px 3px #f15b59;
 }
 .input:checked ~ .span::after {
-  background: #00ff00;
-  box-shadow: 1px 1px 3px #009c00, -1px -1px 3px #00ff00;
+  background: #a5d7e8;
+  box-shadow: 1px 1px 3px #a5d7e8, -1px -1px 3px #a5d7e8;
 }
 .buttons {
   display: flex;
