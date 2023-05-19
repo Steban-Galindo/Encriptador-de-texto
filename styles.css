@@ -104,13 +104,13 @@ body {
     transform: rotate(0deg);
   }
 }
-.input:checked + .slider {
+.sw-input:checked + .slider {
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
 }
-.input:focus + .slider {
+.sw-input:focus + .slider {
   box-shadow: 0 0 1px #183153;
 }
-.input:checked + .slider:before {
+.sw-input:checked + .slider:before {
   transform: translateX(30px);
 }
 .subtitle {
@@ -193,7 +193,6 @@ body {
 }
 .input:checked ~ .span::before {
   content: "Desencriptar";
-  text-shadow: 1px 1px 0.5px rgba(0, 255, 0, 0.3);
   border-radius: 8px;
   background: rgb(5, 6, 45);
   box-shadow: inset -6px -6px 12px #635985, inset 6px 6px 12px #635985;
