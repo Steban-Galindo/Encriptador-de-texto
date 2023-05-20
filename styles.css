@@ -364,3 +364,37 @@ body {
     font-size: x-large;
   }
 }
+
+@media (max-width: 390px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textSpace {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2%;
+  }
+  .card {
+    margin: 20px;
+    width: 280px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    margin: 0 50px 50px;
+  }
+  .title {
+    font-size: x-large;
+  }
+  .name {
+    font-size: x-large;
+  }
+}
