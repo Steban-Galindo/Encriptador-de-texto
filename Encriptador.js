@@ -1,5 +1,6 @@
 const botonEncriptar = document.getElementById("BotonEncriptar");
 const botonDesencriptar = document.getElementById("BotonDesencriptar");
+const sectionWait = document.getElementById("wait");
 botonEncriptar.addEventListener("click", encriptar);
 botonDesencriptar.addEventListener("click", desencriptar);
 function encriptar() {
@@ -22,4 +23,5 @@ function encriptar() {
     }
   }
   document.getElementById("resultado").textContent = texto_encriptado;
+  sectionWait.style.display = "none";
 }

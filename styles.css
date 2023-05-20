@@ -134,6 +134,7 @@ body {
   border-radius: 20px;
   width: 100%;
   height: 100%;
+  flex-direction: column;
 }
 .input-text {
   width: -webkit-fill-available;
@@ -228,7 +229,20 @@ body {
 .textOut {
   color: white;
   margin: 3%;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  width: auto;
+  height: auto;
   font-style: italic;
+}
+.imgesperando {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 13%;
+}
+.wait {
+  color: white;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
