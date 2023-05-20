@@ -6,7 +6,8 @@ body {
   margin: 2%;
 }
 .title {
-  background: linear-gradient(#5b42f3, #00ddeb);
+  background-image: linear-gradient(#5b42f3, #00ddeb);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   display: flex;
@@ -14,7 +15,8 @@ body {
   font-family: "Lora", serif;
 }
 .name {
-  background: linear-gradient(#af40ff, #5b42f3);
+  background-image: linear-gradient(#af40ff, #5b42f3);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Dancing Script", cursive;
