@@ -104,13 +104,13 @@ body {
     transform: rotate(0deg);
   }
 }
-.sw-input:checked + .slider {
+.input:checked + .slider {
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
 }
-.sw-input:focus + .slider {
+.input:focus + .slider {
   box-shadow: 0 0 1px #183153;
 }
-.sw-input:checked + .slider:before {
+.input:checked + .slider:before {
   transform: translateX(30px);
 }
 .subtitle {
@@ -148,74 +148,77 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.radio-input {
+.wrapper {
+  --font-color-dark: #a041fd;
+  --font-color-light: #0cd5ec;
+  --bg-color: #05062d;
+  --main-color: #5650f3;
   position: relative;
+  width: 300px;
+  height: 36px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 34px;
   display: flex;
-  flex-direction: column;
-  margin: 10px;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
+  flex-direction: row;
+  box-shadow: 4px 4px var(--main-color);
+  justify-content: space-evenly;
+  margin: 0 50px;
 }
-.radio-input .input {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  cursor: pointer;
-  z-index: 10;
-  opacity: 0;
-}
-.radio-input .span {
+.option {
+  width: 80.5px;
+  height: 28px;
   position: relative;
-  display: block;
+  top: 2px;
+  left: 2px;
+}
+.inButton {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  border-radius: 10px;
-}
-.radio-input .span::before {
-  content: "Encriptar";
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  border-radius: 8px;
-  background: rgb(5, 6, 45);
-  box-shadow: inset -6px -6px 12px #635985, inset 6px 6px 12px #635985;
-  color: #fff;
-  font-weight: 700;
-  font-size: 17px;
+  left: 0;
+  top: 0;
+  appearance: none;
+  cursor: pointer;
+}
+.btn {
+  width: 110%;
+  height: 100%;
+  background-color: var(--bg-color);
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.input:checked ~ .span::before {
-  content: "Desencriptar";
-  border-radius: 8px;
-  background: rgb(5, 6, 45);
-  box-shadow: inset -6px -6px 12px #635985, inset 6px 6px 12px #635985;
-  color: #fff;
+.span {
+  color: var(--font-color-dark);
 }
-.radio-input .span::after {
-  content: "";
-  height: 6px;
-  width: 6px;
-  border-radius: 100%;
-  background-color: #f15b59;
-  position: absolute;
-  top: calc(50% - 3px);
-  right: 20px;
-  box-shadow: 1px 1px 3px #f15b59, -1px -1px 3px #f15b59;
+.inButton:checked + .btn {
+  background-color: var(--main-color);
 }
-.input:checked ~ .span::after {
-  background: #a5d7e8;
-  box-shadow: 1px 1px 3px #a5d7e8, -1px -1px 3px #a5d7e8;
+.inButton:checked + .btn .span {
+  color: var(--font-color-light);
 }
 .buttons {
   display: flex;
-  margin: 2%;
+  margin: 2% 100px;
+  justify-content: space-around;
   flex-direction: row;
+}
+.wrapper2 {
+  --font-color-dark: #a041fd;
+  --font-color-light: #0cd5ec;
+  --bg-color: #05062d;
+  --main-color: #5650f3;
+  position: relative;
+  width: 150px;
+  height: 36px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 34px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 4px 4px var(--main-color);
   justify-content: center;
+  margin: 0 125px;
 }
