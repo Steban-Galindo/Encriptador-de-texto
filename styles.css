@@ -1,3 +1,86 @@
+[tema="light"] {
+  .bd {
+    background-color: #eaf1d5;
+  }
+  .title {
+    color: #000;
+  }
+  .name {
+    color: #000;
+  }
+  .input + .slider {
+    background-color: #c1d0b5;
+    border-color: #000;
+  }
+  .slider:before {
+    background-color: rgb(5, 6, 45);
+  }
+  .card {
+    box-shadow: rgba(65, 199, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, #678e63, #678e63 50%, #678e63);
+  }
+  .card__content {
+    background: #c1d0b5;
+  }
+  .input-text {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: none;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    font-style: italic;
+    color: white;
+    padding: 3%;
+    outline: none;
+  }
+  .textSpace {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .wrapper {
+    --font-color-dark2: black;
+    --font-color-light2: white;
+    --bg-color2: #c1d0b5;
+    --main-color2: #678e63;
+    background-color: var(--bg-color2);
+    border: 2px solid var(--main-color2);
+    box-shadow: 4px 4px var(--main-color2);
+  }
+  .span {
+    color: var(--font-color-dark2);
+  }
+  .inButton:checked + .btn {
+    background-color: var(--main-color2);
+  }
+  .inButton:checked + .btn .span {
+    color: var(--font-color-light2);
+  }
+  .wrapper2 {
+    --font-color-dark2: black;
+    --font-color-light2: white;
+    --bg-color2: #c1d0b5;
+    --main-color2: #678e63;
+    background-color: var(--bg-color2);
+    border: 2px solid var(--main-color2);
+    box-shadow: 4px 4px var(--main-color2);
+  }
+  .btn {
+    background-color: var(--bg-color2);
+  }
+  .textOut {
+    color: black;
+  }
+  .wait {
+    color: black;
+  }
+  .adverd {
+    color: black;
+  }
+  .input-text {
+    color: black;
+  }
+}
 body {
   background-color: rgb(5, 6, 45);
   padding: 15px;

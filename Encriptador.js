@@ -47,3 +47,18 @@ function copiar() {
   document.body.removeChild(aux);
   alert("Texto copiado correctamente");
 }
+const vectorDark = document.getElementById("vectorDark");
+const vectorLigth = document.getElementById("vectorLigth");
+const colorSwitch = document.getElementById("check");
+function cambiaTema(ev) {
+  if (ev.target.checked) {
+    document.documentElement.setAttribute("tema", "dark");
+    vectorLigth.style.display = "none";
+    vectorDark.style.display = "block";
+  } else {
+    document.documentElement.setAttribute("tema", "light");
+    vectorDark.style.display = "none";
+    vectorLigth.style.display = "block";
+  }
+}
+colorSwitch.addEventListener("change", cambiaTema);
